@@ -1,4 +1,2 @@
-anchortheme
-===========
-
-Theme for Anchor Blog
+dockyard-anchor
+===============
