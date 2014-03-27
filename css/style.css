@@ -17,7 +17,7 @@
 }
 
 body {
-	background: #F2F1ED;
+	background: #CBC68B;
 	color: #34495e;
 	font: 14px/1.6 "Lato", sans-serif;
 	width: 900px;
@@ -206,5 +206,3 @@ header ul {
 .highlight .vg { color: #000000; } /* Name.Variable.Global */
 .highlight .vi { color: #000000; } /* Name.Variable.Instance */
 .highlight .il { color: #0000cf; font-weight: bold; } /* Literal.Number.Integer.Long */
-
-
