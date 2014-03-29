@@ -29,6 +29,10 @@
     		<script><?php echo article_js(); ?></script>
 		<?php endif; ?>
 
+		<?php echo theme_url('css/bootstrap.css'); ?>
+		<?php echo theme_url('css/bootstrap.min.css'); ?>
+		<?php echo theme_url('css/simple-sidebar.css'); ?>
+		
 		<!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
