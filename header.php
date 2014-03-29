@@ -34,7 +34,7 @@
 			<aside>
 				<header>
 					<a id="logo" href="<?php echo base_url(); ?>" title="<?php echo site_name(); ?>">
-						<img src="<?php echo theme_url('/img/logo.svg'); ?>" width="50px"/>
+						<img src="<?php echo theme_url('/img/logo.svg'); ?>" width="150px"/>
 					</a>
 				</header>
 
@@ -75,5 +75,5 @@
 						<?php endwhile; ?>
 					</ul>
 				</nav>
-				
+
 			</aside>
