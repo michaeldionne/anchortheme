@@ -28,6 +28,14 @@
     		<style><?php echo article_css(); ?></style>
     		<script><?php echo article_js(); ?></script>
 		<?php endif; ?>
+
+		<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
 	</head>
 	<body class="<?php echo body_class(); ?>">
 		<div class="clearfix">
@@ -37,6 +45,28 @@
 						<img src="<?php echo theme_url('/img/logo.svg'); ?>" width="150px"/>
 					</a>
 				</header>
+
+<!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#">Start Bootstrap</a>
+                </li>
+                <li><a href="#">Dashboard</a>
+                </li>
+                <li><a href="#">Shortcuts</a>
+                </li>
+                <li><a href="#">Overview</a>
+                </li>
+                <li><a href="#">Events</a>
+                </li>
+                <li><a href="#">About</a>
+                </li>
+                <li><a href="#">Services</a>
+                </li>
+                <li><a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
 
 				<?php if(has_menu_items()): ?>
 				<nav id="main" role="navigation">
