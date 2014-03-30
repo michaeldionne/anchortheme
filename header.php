@@ -46,48 +46,50 @@
 <!-- Sidebar -->
         <div id="sidebar-wrapper">
 
-					<ul class="sidebar-brand">
-					<a id="logo" href="<?php echo base_url(); ?>" title="<?php echo site_name(); ?>">
-						<img src="<?php echo theme_url('/img/logo.svg'); ?>" width="150px"/>
-					</a>
-					</ul>
+					<div class="row">
+						<a id="logo" href="<?php echo base_url(); ?>" title="<?php echo site_name(); ?>">
+							<img src="<?php echo theme_url('/img/logo.svg'); ?>" width="150px"/>
+						</a>
+					</div>
 
 
-          <ul class="sidebar-nav">
-              <?php if(has_menu_items()): ?>
-								<nav id="main" role="navigation">
-									<ul>
-										<?php while(menu_items()): ?>
-										<li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
-											<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
-												<?php echo menu_name(); ?>
-											</a>
-										</li>
-										<?php endwhile; ?>
-									</ul>
-								</nav>
-								<?php endif; ?>
-
-								<nav>
-									<ul>
-										<?php while(categories()): ?>
-											<li>
-												<span title="<?php echo category_description(); ?>">
-													<?php echo category_title(); ?>
-												</span>
-
-												<ul>
-													<?php $items = Query::table(Base::table('posts'))
-															->where('category', '=', category_id())
-															->where('status', '=', 'published')->get();
-															$page = Registry::get('posts_page');
-
-													foreach($items as $item): ?>
-														<li><a href="<?php echo base_url($page->slug . '/' . $item->slug); ?>" title="<?php echo $item->title; ?>"><?php echo $item->title; ?></a></li>
-													<?php endforeach; ?>
-												</ul>
-
+          <div class="row">
+						<ul class="sidebar-nav">
+	              <?php if(has_menu_items()): ?>
+									<nav id="main" role="navigation">
+										<ul>
+											<?php while(menu_items()): ?>
+											<li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
+												<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
+													<?php echo menu_name(); ?>
+												</a>
 											</li>
-										<?php endwhile; ?>
-									</ul>
+											<?php endwhile; ?>
+										</ul>
+									</nav>
+									<?php endif; ?>
+
+									<nav>
+										<ul>
+											<?php while(categories()): ?>
+												<li>
+													<span title="<?php echo category_description(); ?>">
+														<?php echo category_title(); ?>
+													</span>
+
+													<ul>
+														<?php $items = Query::table(Base::table('posts'))
+																->where('category', '=', category_id())
+																->where('status', '=', 'published')->get();
+																$page = Registry::get('posts_page');
+
+														foreach($items as $item): ?>
+															<li><a href="<?php echo base_url($page->slug . '/' . $item->slug); ?>" title="<?php echo $item->title; ?>"><?php echo $item->title; ?></a></li>
+														<?php endforeach; ?>
+													</ul>
+
+												</li>
+											<?php endwhile; ?>
+										</ul>
+									</div>
 							</div>
