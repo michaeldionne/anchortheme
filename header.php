@@ -37,12 +37,6 @@
 	</head>
 	<body class="<?php echo body_class(); ?>">
 
-				<header>
-<!-- 					<a id="logo" href="<?php echo base_url(); ?>" title="<?php echo site_name(); ?>">
-						<img src="<?php echo theme_url('/img/logo.svg'); ?>" width="150px"/>
-					</a> -->
-				</header>
-
 <!-- Sidebar -->
         <div id="sidebar-wrapper">
 
