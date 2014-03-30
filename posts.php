@@ -1,5 +1,6 @@
 <?php theme_include('header'); ?>
 
+<div class="page-content inset">
 
 	<div class="content-header">
       <h1>
@@ -8,7 +9,6 @@
       </h1>
   </div>
 
-<div class="page-content inset">
 	<section class="sheet answer">
 	<!-- 	<header class="ribbon"><?php echo page_title(); ?></header> -->
 		<?php if(has_posts()): ?>
