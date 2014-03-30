@@ -1,0 +1,126 @@
+body {
+	font: 15px "Helvetica Neue", arial;
+	-webkit-font-smoothing: antialiased;
+	color: #46474f;
+}
+
+#sidebar {
+	background: #414752;
+	text-align: center;
+	margin: auto;
+	height: 100%;
+}
+#sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a, button {
+	-o-transition:all .2s ease-out, background 0.3s ease-in;
+	-ms-transition:all .2s ease-out, background 0.3s ease-in;
+	-moz-transition:all .2s ease-out, background 0.3s ease-in;
+	-webkit-transition:all .2s ease-out, background 0.3s ease-in;
+	transition:all .2s ease-out, background 0.3s ease-in;
+}
+#cat {
+	color: #f5f5f5;
+}
+#sidebar a {
+	color: #f5f5f5;
+	text-decoration: none;
+}
+#sidebar a:hover {
+	opacity: 0.65;
+}
+#sidebar li {
+	padding: 4px;
+}
+#sidebar p {
+	color: #f5f5f5;
+	font-size: 13px;
+}
+#sidebar #search {
+	margin-top: 20px;
+}
+#search input {
+	padding: 8px;
+	border-radius: 4px;
+	border: none;
+}
+#search input:focus {
+	outline: none;
+}
+.posts p {
+	margin-top: -15px;
+	font-size: 14px;
+}
+.posts h2 a, .search h2 a {
+	text-decoration: none;
+	color: #46474f;
+	
+	-o-transition:all .2s ease-out, background 0.5s ease-in;
+	-ms-transition:all .2s ease-out, background 0.5s ease-in;
+	-moz-transition:all .2s ease-out, background 0.5s ease-in;
+	-webkit-transition:all .2s ease-out, background 0.5s ease-in;
+	transition:all .2s ease-out, background 0.5s ease-in;
+}
+.posts h2 a:hover, .search h2 a:hover {
+	opacity: 0.65;	
+}
+
+hr {
+	color: #46474f;
+	opacity: 0.5;
+}
+.comments p {
+	margin-top: -12px;
+}
+.comments span {
+	font-weight: normal;
+	font-size: 12px;
+	margin-left: 10px;
+}
+#commentform {
+	margin-top: 30px;
+}
+#commentform button {
+	background: #4f5663;
+	padding: 8px 15px;
+	margin-left: 360px;
+	border-radius: 4px;
+	border: none;
+	color: #f5f5f5;
+}
+#commentform button:hover {
+	cursor: pointer;
+	background: #676f7e;
+}
+#commentform input, #commentform textarea {
+	padding: 8px;
+	border: 1px solid #c2c5c6;
+	border-radius: 4px; 
+	width: 200px;
+	margin-right: 20px;
+}
+#commentform input:focus, #commentform textarea:focus {
+	outline: none;
+	border: 1px solid #a6abac;
+}
+#commentform textarea {
+	width: 423px;
+	height: 100px;
+}
+pre {
+	background: #eef2f3;
+	padding: 12px;
+	border-radius: 4px; 
+	-webkit-box-shadow: inset 0 1px 1px 0 #d3d7d8;
+	
+	font-style: italic;
+}
+
+
+
+
+
+

@@ -2,16 +2,14 @@
 
 <div class="col-4-5">
 	
-	<div class="posts">
+	<div class="search">
 	
-	<?php if(has_posts()) : ?>
-		<?php while(posts()) : ?>
-			
+	<?php if(has_search_results()): ?>
+		<?php while(search_results()): ?>
 			<h2><a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><?php echo article_title(); ?></a></h2>
-			<p><?php echo article_description(); ?></p>
-			
-		<?php endwhile; ?>
+		<?php endwhile; ?> 
 	<?php endif; ?>
+	
 	
 	</div>
 	

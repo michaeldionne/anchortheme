@@ -1,11 +1,14 @@
-<?php theme_include('header'); ?>
+<?php theme_include('partials/sidebar'); ?>
 
-<section class="sheet answer" id="article-<?php echo article_id(); ?>">
-	<header class="ribbon"><?php echo page_title(); ?></header>
+<div class="col-4-5">
 	
-	<article>
-		<?php echo page_content(); ?>
-	</article>
-</section>
+	<div class="page">
+		<h2><?php echo page_title(); ?></h2>
+		<div class="prettyprint">
+			<?php echo page_content(); ?>
+		</div>
+	</div>
+	
+</div>
 
-<?php theme_include('footer'); ?>
+<?php theme_include('partials/footer'); ?>

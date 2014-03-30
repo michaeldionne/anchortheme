@@ -1,5 +1,5 @@
-Theme name:    Dockyard
-Description:   
-Author name:   Robert Rhoades
-Author site:   http://studioromeo.co.uk
-License:       MIT
+Theme name: Script
+Description: Script
+Author name: Jack Emerson
+Author site: http://jackemerson.me
+License: http://licence.visualidiot.com
