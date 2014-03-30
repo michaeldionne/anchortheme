@@ -15,7 +15,9 @@
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
-		<script src="<?php echo asset_url('/js/zepto.js'); ?>"></script>
+		<script src="<?php echo asset_url('/js/bootstrap.js'); ?>"></script>
+		<script src="<?php echo asset_url('/js/bootstrap.min.js'); ?>"></script>
+		<script src="<?php echo asset_url('/js/jquery-1.10.2.js'); ?>"></script>
 
 	    <meta name="viewport" content="width=device-width">
 	    <meta name="generator" content="Anchor CMS">
