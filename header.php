@@ -46,7 +46,7 @@
 <!-- Sidebar -->
         <div id="sidebar-wrapper">
 
-					<div class="row">
+					<div class="row_1">
 						<a id="sidebar-brand" href="<?php echo base_url(); ?>" title="<?php echo site_name(); ?>">
 							<img src="<?php echo theme_url('/img/logo.svg'); ?>" class="img-responsive" alt="Responsive image">
 						</a>

@@ -28,6 +28,10 @@
   padding: 0;
 }
 
+.row_1 {
+  margin-bottom:20px;
+}
+
 .sidebar-nav li {
   line-height: 40px;
   text-indent: 20px;
