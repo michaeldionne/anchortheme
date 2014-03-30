@@ -46,9 +46,12 @@
 <!-- Sidebar -->
         <div id="sidebar-wrapper">
 
+					<ul class="sidebar-nav">
 					<a id="logo" href="<?php echo base_url(); ?>" title="<?php echo site_name(); ?>">
 						<img src="<?php echo theme_url('/img/logo.svg'); ?>" width="150px"/>
 					</a>
+					</ul>
+
 
           <ul class="sidebar-nav">
               <?php if(has_menu_items()): ?>
