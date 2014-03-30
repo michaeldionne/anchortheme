@@ -64,8 +64,6 @@
 																	</ul>
 																</nav>
 																<?php endif; ?>
-            </ul>
-        </div>
 
 				<nav>
 					<ul>
@@ -90,3 +88,6 @@
 						<?php endwhile; ?>
 					</ul>
 				</nav>
+
+			</ul>
+		</div>
