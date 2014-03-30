@@ -1,5 +1,6 @@
 		</div>
-    </body>
+	</div>
+</body>
 
 		<!-- Custom JavaScript for the Menu Toggle -->
 	    <script>

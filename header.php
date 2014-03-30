@@ -37,6 +37,7 @@
 	</head>
 	<body class="<?php echo body_class(); ?>">
 
+		<div id="wrapper">
 <!-- Sidebar -->
         <div id="sidebar-wrapper">
 
