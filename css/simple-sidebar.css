@@ -7,7 +7,7 @@
   margin-left: -250px;
   left: 250px;
   width: 250px;
-  background: #131003;
+  background: #000;
   position: fixed;
   height: 100%;
   overflow-y: auto;
@@ -114,6 +114,4 @@
   padding: 15px;
 }
 
-.image-responsive{
-  padding: 10px;
 }

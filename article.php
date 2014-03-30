@@ -2,7 +2,7 @@
 
 <section class="sheet answer" id="article-<?php echo article_id(); ?>">
 	<header class="ribbon"><?php echo article_title(); ?></header>
-
+	
 	<article>
 		<?php echo article_markdown(); ?>
 	</article>

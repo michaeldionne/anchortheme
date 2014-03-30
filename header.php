@@ -5,9 +5,6 @@
 		<title><?php echo page_title('Page can’t be found'); ?> - <?php echo site_name(); ?></title>
 		<meta name="description" content="<?php echo site_description(); ?>">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
-		<link rel="stylesheet" href="<?php echo theme_url('/css/bootstrap.css'); ?>">
-		<link rel="stylesheet" href="<?php echo theme_url('/css/bootstrap.min.css'); ?>">
-		<link rel="stylesheet" href="<?php echo theme_url('/css/simple-sidebar.css'); ?>">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
 		<link rel="shortcut icon" href="<?php echo theme_url('img/favicon.png'); ?>">
 
@@ -15,9 +12,7 @@
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
-		<script src="<?php echo asset_url('/js/bootstrap.js'); ?>"></script>
-		<script src="<?php echo asset_url('/js/bootstrap.min.js'); ?>"></script>
-		<script src="<?php echo asset_url('/js/jquery-1.10.2.js'); ?>"></script>
+		<script src="<?php echo asset_url('/js/zepto.js'); ?>"></script>
 
 	    <meta name="viewport" content="width=device-width">
 	    <meta name="generator" content="Anchor CMS">
@@ -34,57 +29,81 @@
     		<script><?php echo article_js(); ?></script>
 		<?php endif; ?>
 
+		<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
 	</head>
 	<body class="<?php echo body_class(); ?>">
+		<div class="clearfix">
+			<aside>
+				<header>
+					<a id="logo" href="<?php echo base_url(); ?>" title="<?php echo site_name(); ?>">
+						<img src="<?php echo theme_url('/img/logo.svg'); ?>" width="150px"/>
+					</a>
+				</header>
 
-		<div id="wrapper">
 <!-- Sidebar -->
         <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#">Start Bootstrap</a>
+                </li>
+                <li><a href="#">Dashboard</a>
+                </li>
+                <li><a href="#">Shortcuts</a>
+                </li>
+                <li><a href="#">Overview</a>
+                </li>
+                <li><a href="#">Events</a>
+                </li>
+                <li><a href="#">About</a>
+                </li>
+                <li><a href="#">Services</a>
+                </li>
+                <li><a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
 
-					<div class="row">
-						<a id="sidebar-brand" href="<?php echo base_url(); ?>" title="<?php echo site_name(); ?>">
-							<img src="<?php echo theme_url('/img/logo.svg'); ?>" class="img-responsive" alt="Responsive image">
-						</a>
-					</div>
+				<?php if(has_menu_items()): ?>
+				<nav id="main" role="navigation">
+					<ul>
+						<?php while(menu_items()): ?>
+						<li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
+							<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
+								<?php echo menu_name(); ?>
+							</a>
+						</li>
+						<?php endwhile; ?>
+					</ul>
+				</nav>
+				<?php endif; ?>
 
+				<nav>
+					<ul>
+						<?php while(categories()): ?>
+							<li>
+								<span title="<?php echo category_description(); ?>">
+									<?php echo category_title(); ?>
+								</span>
 
-          <div class="row">
-						<ul class="sidebar-nav">
-	              <?php if(has_menu_items()): ?>
-									<nav id="main" role="navigation">
-										<ul>
-											<?php while(menu_items()): ?>
-											<li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
-												<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
-													<?php echo menu_name(); ?>
-												</a>
-											</li>
-											<?php endwhile; ?>
-										</ul>
-									</nav>
-									<?php endif; ?>
+								<ul>
+									<?php $items = Query::table(Base::table('posts'))
+											->where('category', '=', category_id())
+											->where('status', '=', 'published')->get();
+											$page = Registry::get('posts_page');
 
-									<nav>
-										<ul>
-											<?php while(categories()): ?>
-												<li>
-													<span title="<?php echo category_description(); ?>">
-														<?php echo category_title(); ?>
-													</span>
+									foreach($items as $item): ?>
+										<li><a href="<?php echo base_url($page->slug . '/' . $item->slug); ?>" title="<?php echo $item->title; ?>"><?php echo $item->title; ?></a></li>
+									<?php endforeach; ?>
+								</ul>
 
-													<ul>
-														<?php $items = Query::table(Base::table('posts'))
-																->where('category', '=', category_id())
-																->where('status', '=', 'published')->get();
-																$page = Registry::get('posts_page');
+							</li>
+						<?php endwhile; ?>
+					</ul>
+				</nav>
 
-														foreach($items as $item): ?>
-															<li><a href="<?php echo base_url($page->slug . '/' . $item->slug); ?>" title="<?php echo $item->title; ?>"><?php echo $item->title; ?></a></li>
-														<?php endforeach; ?>
-													</ul>
-
-												</li>
-											<?php endwhile; ?>
-										</ul>
-									</div>
-							</div>
+			</aside>
