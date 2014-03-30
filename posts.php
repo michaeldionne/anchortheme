@@ -2,12 +2,12 @@
 
 <div class="page-content inset">
 
-	<div class="content-header">
+<!-- 	<div class="content-header">
       <h1>
           <a id="menu-toggle" href="#" class="btn btn-default"><i class="icon-reorder"></i></a>
           Simple Sidebar
       </h1>
-  </div>
+  </div> -->
 
 	<section class="sheet answer">
 	<!-- 	<header class="ribbon"><?php echo page_title(); ?></header> -->
@@ -33,12 +33,12 @@
 
 
 	<!-- Custom JavaScript for the Menu Toggle -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("active");
-    });
-    </script>
-</div>
+//     <script>
+//     $("#menu-toggle").click(function(e) {
+//         e.preventDefault();
+//         $("#wrapper").toggleClass("active");
+//     });
+//     </script>
+// </div>
 
 <?php theme_include('footer'); ?>
