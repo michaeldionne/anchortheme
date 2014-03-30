@@ -27,11 +27,12 @@
 		<?php if(customised()): ?>
     		<style><?php echo article_css(); ?></style>
     		<script><?php echo article_js(); ?></script>
+				<?php echo theme_url('/css/bootstrap.css'); ?>
+				<?php echo theme_url('/css/bootstrap.min.css'); ?>
+				<?php echo theme_url('/css/simple-sidebar.css'); ?>
 		<?php endif; ?>
 
-		<?php echo theme_url('/css/bootstrap.css'); ?>
-		<?php echo theme_url('/css/bootstrap.min.css'); ?>
-		<?php echo theme_url('/css/simple-sidebar.css'); ?>
+
 
 		<!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
