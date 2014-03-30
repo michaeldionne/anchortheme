@@ -5,6 +5,9 @@
 		<title><?php echo page_title('Page can’t be found'); ?> - <?php echo site_name(); ?></title>
 		<meta name="description" content="<?php echo site_description(); ?>">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
+		<link rel="stylesheet" href="<?php echo theme_url('/css/bootstrap.css'); ?>">
+		<link rel="stylesheet" href="<?php echo theme_url('/css/bootstrap.min.css'); ?>">
+		<link rel="stylesheet" href="<?php echo theme_url('/css/simple-sidebar.css'); ?>">
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
 		<link rel="shortcut icon" href="<?php echo theme_url('img/favicon.png'); ?>">
 
@@ -27,9 +30,6 @@
 		<?php if(customised()): ?>
     		<style><?php echo article_css(); ?></style>
     		<script><?php echo article_js(); ?></script>
-				<?php echo theme_url('/css/bootstrap.css'); ?>
-				<?php echo theme_url('/css/bootstrap.min.css'); ?>
-				<?php echo theme_url('/css/simple-sidebar.css'); ?>
 		<?php endif; ?>
 
 
