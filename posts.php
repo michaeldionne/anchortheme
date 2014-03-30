@@ -1,5 +1,6 @@
 <?php theme_include('header'); ?>
 
+<!-- Page content -->
 <div class="page-content inset">
 
 	<div class="content-header">
