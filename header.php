@@ -38,13 +38,18 @@
 	<body class="<?php echo body_class(); ?>">
 
 				<header>
-					<a id="logo" href="<?php echo base_url(); ?>" title="<?php echo site_name(); ?>">
+<!-- 					<a id="logo" href="<?php echo base_url(); ?>" title="<?php echo site_name(); ?>">
 						<img src="<?php echo theme_url('/img/logo.svg'); ?>" width="150px"/>
-					</a>
+					</a> -->
 				</header>
 
 <!-- Sidebar -->
         <div id="sidebar-wrapper">
+
+					<a id="logo" href="<?php echo base_url(); ?>" title="<?php echo site_name(); ?>">
+						<img src="<?php echo theme_url('/img/logo.svg'); ?>" width="150px"/>
+					</a>
+
             <ul class="sidebar-nav">
                 <?php if(has_menu_items()): ?>
 																<nav id="main" role="navigation">
@@ -85,5 +90,3 @@
 						<?php endwhile; ?>
 					</ul>
 				</nav>
-
-	
