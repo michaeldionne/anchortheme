@@ -30,6 +30,15 @@
 			<p>Looks like you have some writing to do!</p>
 		<?php endif; ?>
 	</section>
+
+
+	<!-- Custom JavaScript for the Menu Toggle -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+    });
+    </script>
 </div>
 
 <?php theme_include('footer'); ?>
