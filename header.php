@@ -34,19 +34,9 @@
     		<script><?php echo article_js(); ?></script>
 		<?php endif; ?>
 
-
-
-		<!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <!-- Add custom CSS here -->
-    <link href="css/simple-sidebar.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
 	</head>
 	<body class="<?php echo body_class(); ?>">
-		<div class="clearfix">
-			<aside>
+
 				<header>
 					<a id="logo" href="<?php echo base_url(); ?>" title="<?php echo site_name(); ?>">
 						<img src="<?php echo theme_url('/img/logo.svg'); ?>" width="150px"/>
@@ -96,4 +86,4 @@
 					</ul>
 				</nav>
 
-			</aside>
+	
