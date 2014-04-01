@@ -10,7 +10,7 @@
 				<div class="col-lg-8 col-lg-offset-2">
                     <p><bd><?php echo article_date(); ?></bd></p>
                     <h4><a href="<?php echo article_url(); ?>"><?php echo article_title(); ?></a></h4>
-                    <p><?php echo article_content(); ?></p>
+                    <p><?php echo article_markdown(); ?></p>
                     <p><a href="<?php echo article_url(); ?>">Continue Reading...</a></p>
                 </div>
             </div><!-- /row -->
