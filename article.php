@@ -5,7 +5,6 @@
 	<div class="container pt">
 		<div class="row mt">
 			<div class="col-lg-8 col-lg-offset-2">
-                <p><img src="<?php echo theme_url('assets/img/user.png'); ?>" width="50px" height="50px"> <ba><?php echo article_author(); ?></ba></p>
 				<h3><?php echo article_title(); ?></h3>
 				<hr>
                 <div class="resp">
