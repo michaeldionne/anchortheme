@@ -87,7 +87,7 @@ a:after {
 .navbar {
 	text-transform: uppercase;
 	margin-bottom: 0px;
-  position: absolute;
+  position: fixed;
 }
 
 .navbar-inverse {
@@ -149,6 +149,7 @@ a:after {
 	padding-top: 70px;
 	padding-bottom: 70px;
 	background-color: #f2f2f2;
+  position: relative;
 }
 
 
