@@ -1,40 +1,32 @@
-<?php theme_include('partials/sidebar'); ?>
+<?php theme_include('partials/header'); ?>
 
-<div class="col-4-5">
+<!-- +++++ Projects Section +++++ -->
 	
-	<div class="article">
-	
-	<h2><?php echo article_title(); ?></h2>
-	<?php echo article_markdown(); ?>
-	
-	</div>
-	
-	<?php if(comments_open() and has_comments()): ?>
-		<hr size="1" />
-		<div class="comments">
-			<h3>Comments:</h3>
-    		<?php while(comments()): ?>
-				<h4><?php echo comment_name(); ?> <span><?php echo comment_date(); ?></span></h4>
-				<p><?php echo comment_text(); ?></p>
-			<?php endwhile; ?>
-		</div>
-	<?php endif; ?>
-	
-	<?php if(comments_open()): ?>
-		<form id="commentform" method="post" action="<?php echo comment_form_url(); ?>#comment">
-			
-			<?php echo comment_form_notifications(); ?>
-			
-			<?php echo comment_form_input_name('placeholder="Name"'); ?>
-			<?php echo comment_form_input_email('placeholder="Email"'); ?>
-			
-			<p><?php echo comment_form_input_text('placeholder="Comment"'); ?></p>
-				
-			<p class="button"><?php echo comment_form_button('Submit'); ?></p>
-			
-		</form>
-	<?php endif; ?>
-	
-</div>
+	<div class="container pt">
+		<div class="row mt">
+			<div class="col-lg-8 col-lg-offset-2">
+                <p><img src="<?php echo theme_url('assets/img/user.png'); ?>" width="50px" height="50px"> <ba><?php echo article_author(); ?></ba></p>
+				<h3><?php echo article_title(); ?></h3>
+				<hr>
+                <div class="resp">
+				<p><?php echo article_markdown(); ?></p>
+                </div>
+			</div>
+		</div><!-- /row -->
+		<div class="row mt">	
+			<div class="col-lg-8 col-lg-offset-2">
+				<p><bt>Author: <a><?php echo article_author(); ?></a></bt> - <bt>Type: <a href="<?php echo category_url(); ?>"><?php echo category_title(); ?></a></bt> - <bt>Date: <a><?php echo article_date(); ?></a></bt></p>
+                <hr>
+					<p><a href="#" onclick="goBack()"># Back</a></p>
+			</div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+
+<script>
+function goBack()
+  {
+  window.history.back()
+  }
+</script>
 
 <?php theme_include('partials/footer'); ?>
