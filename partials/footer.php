@@ -3,7 +3,7 @@
 	<div id="footer">
 		<div class="container">
 			<div class="row">
-			
+				<p>&copy;2014 Michael Dionne</p>
 			</div><!-- /row -->
 
 		</div><!-- /container -->
