@@ -151,10 +151,10 @@ a:after {
 }
 
 
-#footer {
+/*#footer {
 	background-color: #2f2f2f;
 	padding-top: 50px;
-	padding-bottom: 50px; 
+	padding-bottom: 50px;
 }
 
 #footer p {
@@ -165,7 +165,7 @@ a:after {
 	color: white;
 	text-transform: uppercase;
 	padding-bottom: 20px;
-}
+}*/
 
 
 /* +++++ Color Wraps / Blog Page +++++ */
@@ -211,10 +211,10 @@ bt {
 
 /* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
 /* Effects also are controled by hover.zoom.js */
-.zoom { 
-    display:block; 
-    position:relative; 
-    overflow:hidden; 
+.zoom {
+    display:block;
+    position:relative;
+    overflow:hidden;
     background:transparent url(../img/loader.gif) no-repeat center;
 }
 
