@@ -16,7 +16,7 @@
 			<div class="col-lg-8 col-lg-offset-2">
 				<p><bt>Category: <a href="<?php echo category_url(); ?>"><?php echo category_title(); ?></a></bt> - <bt>Written: <a><?php echo article_date(); ?></a></bt></p>
                 <hr>
-					<p><a href="#" onclick="goBack()">Back to Main</a></p>
+					<p><a href="http://michaeldionne.co" onclick="goBack()">Back to Main</a></p>
 			</div>
 		</div><!-- /row -->
 	</div><!-- /container -->
