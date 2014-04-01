@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="">
     <meta name="description" content="<?php echo site_description(); ?>">
-    <title><?php echo page_title('Page can’t be found'); ?> - <?php echo site_name(); ?></title>
+    <title><?php echo site_name(); ?></title>
 
-    
+
      <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="<?php echo theme_url('assets/css/bootstrap.css'); ?>">
     <!-- Custom styles for this template -->
@@ -33,7 +33,7 @@
     <script><?php echo article_js(); ?></script>
     <?php endif; ?>
 </head>
-    
+
      <!-- Static navbar -->
     <div class="navbar navbar-inverse navbar-static-top">
       <div class="container">
@@ -43,19 +43,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="<?php echo base_url(); ?>"><?php echo site_name(); ?></a>							
+          <a class="navbar-brand" href="<?php echo base_url(); ?>"><?php echo site_name(); ?></a>
         </div><!-- /navbar-header -->
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">       
+          <ul class="nav navbar-nav navbar-right">
             <?php if(has_menu_items()): ?>
 				  <?php while(menu_items()): ?>
 				        <li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
                             <a href="<?php echo menu_url(); ?>"><?php echo menu_name(); ?></a>
-                        </li>                      
-		          <?php endwhile; ?>			      
-            <?php endif; ?>         
+                        </li>
+		          <?php endwhile; ?>
+            <?php endif; ?>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /container -->
