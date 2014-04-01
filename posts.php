@@ -8,7 +8,7 @@
 	    <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-                    <h4><a href="<?php echo article_url(); ?>"><?php echo article_title(); ?></a></h4>
+                    <h2><a href="<?php echo article_url(); ?>"><?php echo article_title(); ?></a></h2>
                     <p><?php echo article_markdown(); ?></p>
                     <p><bd><?php echo article_date(); ?></bd></p>
                 </div>
