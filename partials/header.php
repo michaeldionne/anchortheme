@@ -8,6 +8,7 @@
     <meta name="description" content="<?php echo site_description(); ?>">
     <title><?php echo site_name(); ?></title>
 
+    <link rel="shortcut icon" href="/img/favicon.ico" />
 
      <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="<?php echo theme_url('assets/css/bootstrap.css'); ?>">
