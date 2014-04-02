@@ -8,7 +8,6 @@
     <meta name="description" content="<?php echo site_description(); ?>">
     <title><?php echo site_name(); ?></title>
 
-    <link rel="shortcut icon" href="/img/favicon.ico" />
 
      <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="<?php echo theme_url('assets/css/bootstrap.css'); ?>">
@@ -25,7 +24,7 @@
     <![endif]-->
 
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
-    <link rel="shortcut icon" href="<?php echo theme_url('assets/img/favicon.png'); ?>">
+    <link rel="shortcut icon" href="<?php echo theme_url('assets/img/favicon.ico'); ?>">
 
     <?php if(customised()): ?>
     <!-- Custom CSS -->
