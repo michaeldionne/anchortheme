@@ -20,8 +20,8 @@
 <?php if(has_pagination()): ?>
     <div id="grey">
         <div class="col-lg-8 col-lg-offset-2">
-        <?php echo posts_prev('# Back'); ?>
-        <?php echo posts_next('# Next'); ?>
+        <?php echo posts_prev('< Older Posts'); ?>
+        <?php echo posts_next('Newer Posts >'); ?>
         </div>
     </div><!-- /#grey -->
 <?php endif; ?>
