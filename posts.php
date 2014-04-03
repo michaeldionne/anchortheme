@@ -11,7 +11,6 @@
                     <div class="col-lg-4">
                     	<h1><a href="<?php echo article_url(); ?>"><?php echo article_title(); ?></a></h1>
                     	<p><bd><?php echo article_date(); ?></bd></p>
-                    	// <p><bd><?php echo article_read-time(); ?></bd></p>
                     </div>
                     <div class="col-lg-8">
                     	<p><?php echo article_markdown(); ?></p>
