@@ -10,8 +10,6 @@
 				<div class="col-lg-8 col-lg-offset-2">
                     <div class="col-lg-4">
                     	<h1><a href="<?php echo article_url(); ?>"><?php echo article_title(); ?></a></h1>
-                    </div>
-                    <div class="col-lg-4">
                     	<p><bd><?php echo article_date(); ?></bd></p>
                     </div>
                     <div class="col-lg-8">
