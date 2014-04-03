@@ -90,7 +90,8 @@ a:after {
 
 .navbar {
 	text-transform: uppercase;
-	margin-bottom: 0px;
+	margin-bottom: 125px;
+	position: fixed;
 }
 
 .navbar-inverse {
