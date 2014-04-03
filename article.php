@@ -10,7 +10,7 @@
                     			<p><bd><?php echo article_date(); ?>    |    <?php echo dg_est_reading_time(); ?></bd></p>
                     		</div>
 			</div>
-		</div>	
+		
 			<!-- /row -->
 		<div class="row mt">
 			<div class="col-lg-8 col-lg-offset-2">
