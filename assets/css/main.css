@@ -112,6 +112,7 @@ a:after {
 }
 
 .navbar-brand {
+	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	font-size: 20px;
 	letter-spacing: 2px;
