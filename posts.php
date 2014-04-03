@@ -13,7 +13,6 @@
                     				<p><bd><?php echo article_date(); ?>    |    <?php echo dg_est_reading_time(); ?></bd></p>
                     			</div>
                     		</div>
-                    	</div>
                     <div class="col-lg-8">
                     	<p><?php echo article_markdown(); ?></p>
                     </div>
