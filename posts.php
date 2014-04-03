@@ -8,9 +8,13 @@
 	    <div class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-                    <h1><a href="<?php echo article_url(); ?>"><?php echo article_title(); ?></a></h1>
-                    <p><bd><?php echo article_date(); ?></bd></p>
-                    <p><?php echo article_markdown(); ?></p>
+                    <div class="col-lg-4">
+                    	<h1><a href="<?php echo article_url(); ?>"><?php echo article_title(); ?></a></h1>
+                    </div>
+                    <div class="col-lg-4">
+                    	<p><bd><?php echo article_date(); ?></bd></p>
+                    </div>
+                    	<p><?php echo article_markdown(); ?></p>
                 </div>
             </div><!-- /row -->
         </div><!-- /container -->
