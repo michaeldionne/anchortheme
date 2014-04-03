@@ -9,8 +9,8 @@
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
                     <h1><a href="<?php echo article_url(); ?>"><?php echo article_title(); ?></a></h1>
-                    <p><?php echo article_markdown(); ?></p>
                     <p><bd><?php echo article_date(); ?></bd></p>
+                    <p><?php echo article_markdown(); ?></p>
                 </div>
             </div><!-- /row -->
         </div><!-- /container -->
