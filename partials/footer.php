@@ -23,11 +23,11 @@
 			tooltipStyle: "dark",
 			customStyle : {
 				heading: {
-					fontFamily : "Open+Sans, Times, 'Times New Roman', serif",
+					fontFamily : "Georgia, Times, 'Times New Roman', serif",
 					fontSize : "14px"
 				},
 				body   : {
-					fontFamily : "Open+Sans, Times, 'Times New Roman', serif"
+					fontFamily : "Georgia, Times, 'Times New Roman', serif"
 				}
 			}
 		}
