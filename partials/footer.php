@@ -17,7 +17,19 @@
     	<script>
 	var refTagger = {
 		settings: {
-			bibleVersion: "ESV"			
+			bibleVersion: "ESV",			
+			roundCorners: true,
+			socialSharing: ["twitter"],
+			tooltipStyle: "dark",
+			customStyle : {
+				heading: {
+					fontFamily : "Open+Sans, Times, 'Times New Roman', serif",
+					fontSize : "14px"
+				},
+				body   : {
+					fontFamily : "Open+Sans, Times, 'Times New Roman', serif"
+				}
+			}
 		}
 	};
 	(function(d, t) {
@@ -25,7 +37,7 @@
 		g.src = "//api.reftagger.com/v2/RefTagger.js";
 		s.parentNode.insertBefore(g, s);
 	}(document, "script"));
-	</script>
+</script>
     
 
 </body>
