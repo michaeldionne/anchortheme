@@ -130,7 +130,9 @@ a:after {
   background-color: #1abc9c;
 }
 
-
+.btn-primary {
+	background-color: #34495e;
+}
 /* Helpers */
 
 .mt {
