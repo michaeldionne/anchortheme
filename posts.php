@@ -5,7 +5,7 @@
 <!-- We have posts, it's safe to loop. -->
     <?php $i = 0; while(posts()): $i++; ?>
 	<div id="bg<?php echo $i % 2; ?>">
-	    <div class="container">
+	    <div class="container" id="post-container">
 			<div class="row">
 				<div class="col-lg-10 col-lg-offset-1">
                     <div class="col-lg-4">
