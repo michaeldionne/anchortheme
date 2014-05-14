@@ -24,7 +24,7 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-container {
+#posts-container {
 	padding-top: 70px;
 }
 
