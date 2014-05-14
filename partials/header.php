@@ -26,6 +26,9 @@
 
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
     <link rel="shortcut icon" href="<?php echo theme_url('assets/img/favicon.ico'); ?>">
+    
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "f222e393-a4e7-469d-a0f3-3d98d775b78d", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
     <?php if(customised()): ?>
     <!-- Custom CSS -->
