@@ -24,9 +24,6 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
-#posts-container {
-	padding-top: 300px;
-}
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
@@ -257,3 +254,6 @@ bt {
 	font-size: 40px;
 	color: #1abc9c;
 }
+
+
+body { padding-top: 300px; }
