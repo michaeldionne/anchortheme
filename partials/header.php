@@ -26,9 +26,7 @@
 
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
     <link rel="shortcut icon" href="<?php echo theme_url('assets/img/favicon.ico'); ?>">
-    
-    <style><?php echo page custom _field('custom_css'); ?></style>
-
+  
     <?php if(customised()): ?>
     <!-- Custom CSS -->
     <style><?php echo article_css(); ?></style>
