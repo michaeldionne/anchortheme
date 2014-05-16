@@ -1,6 +1,6 @@
 <!-- +++++ Footer Section +++++ -->
 
-	<div id="footer">
+	<div id="footer" class="navbar navbar-fixed-bottom">
 		<div class="container">
 			<div class="row" >
 				<p class="col-md-4">&copy;2014 Michael Dionne</p>
