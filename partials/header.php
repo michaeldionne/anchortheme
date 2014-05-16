@@ -52,7 +52,7 @@
           <ul class="nav navbar-nav navbar-right">
             <?php if(has_menu_items()): ?>
 				  <?php while(menu_items()): ?>
-				  	<li <?php echo (menu_active()); ?>>
+				  	<li <?php echo (menu_active()? 'id=".cl-effect-3"'); ?>>
                             <a href="<?php echo menu_url(); ?>"><?php echo menu_name(); ?></a>
                         </li>
 		          <?php endwhile; ?>
