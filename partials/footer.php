@@ -3,8 +3,10 @@
 	<div id="footer">
 		<div class="container">
 			<div class="row">
-				<p>&copy;2014 Michael Dionne</p>
-			</div><!-- /row -->
+				<p class="pull-left">&copy;2014 Michael Dionne</p>
+				<p class="pull-right">If you want to follow me, you can reach me here: <a href="https://twitter.com/itsmikedionne" title="Twitter">Twitter</a> | <a href="http://instagram.com/mr_dionne" title="Instagram">Instagram</a>  | <a href="http://michaeldionne.vsco.co" title="VSCO">VSCO</a> | <a href="mailto:me@michaeldionne.co" title="Email">Email</a></p>
+			</div>
+			<!-- /row -->
 
 		</div><!-- /container -->
 	</div><!-- /#footer -->
