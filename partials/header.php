@@ -49,11 +49,11 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right" class="cl-effect-3">
             <?php if(has_menu_items()): ?>
 				  <?php while(menu_items()): ?>
 				  	<li <?php echo (menu_active()); ?>>
-                            <a href="<?php echo menu_url(); ?>" class="cl-effect-3"><?php echo menu_name(); ?></a>
+                            <a href="<?php echo menu_url(); ?>"><?php echo menu_name(); ?></a>
                         </li>
 		          <?php endwhile; ?>
             <?php endif; ?>
