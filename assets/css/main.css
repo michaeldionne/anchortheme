@@ -102,7 +102,7 @@ a:after {
 .navbar-inverse {
 	background-color: #34495e;
 	border-bottom-color: #16a085;
-	border-bottom-width: 2px;
+	border-bottom-width: 3px;
 }
 
 .navbar-inverse .navbar-nav > li > a {
