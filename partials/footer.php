@@ -14,8 +14,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="<?php echo theme_url('assets/js/bootstrap.min.js'); ?>"></script>
-		<script src="<?php echo theme_url('assets/js/app.js'); ?>"></script>
-		<script src="<?php echo theme_url('assets/js/share.min.js'); ?>"></script>
 =======
 
     <!-- Reftagger -->
@@ -43,8 +41,5 @@
 		s.parentNode.insertBefore(g, s);
 	}(document, "script"));
 </script>
-
-
->>>>>>> FETCH_HEAD
 </body>
 </html>
