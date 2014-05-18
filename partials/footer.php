@@ -16,11 +16,10 @@
     <script src="<?php echo theme_url('assets/js/bootstrap.min.js'); ?>"></script>
     <script>
         var share_button_right = new Share(".share-button-bottom", {
-      title: "Share Button",
+      title: "Share Button Multiple Instantiation Test",
       ui: {
         flyout: "bottom right",
-        button_text: "Share",
-        button_background: "#16a085",
+        button_text: "Share"
       },
     });
   </script>
