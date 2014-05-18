@@ -4,11 +4,14 @@
 
 	<div class="container pt">
 		<div class="row mt">
-			<div class="col-lg-8 col-lg-offset-2">
-				<h3><?php echo article_title(); ?></h3>
-
-                <div class="resp">
-				<p><?php echo article_markdown(); ?></p>
+			<div class="col-lg-10 col-lg-offset-1">
+            	<div class="col-lg-4">
+                    <h1><a href="<?php echo article_url(); ?>"><?php echo article_title(); ?></a></h1>
+                    <p><bd><?php echo article_date(); ?>    |    <?php echo dg_est_reading_time(); ?></bd></p>
+                    <p><?php echo site_meta('share_buttons'); ?></>
+                </div>
+                <div class="col-lg-8">
+                    <p><?php echo article_markdown(); ?></p>
                 </div>
 			</div>
 		</div><!-- /row -->

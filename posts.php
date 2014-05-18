@@ -5,12 +5,16 @@
 <!-- We have posts, it's safe to loop. -->
     <?php $i = 0; while(posts()): $i++; ?>
 	<div id="bg<?php echo $i % 2; ?>">
-	    <div class="container">
+	    <div class="container" id="post-container">
 			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
-                    <h2><a href="<?php echo article_url(); ?>"><?php echo article_title(); ?></a></h2>
-                    <p><?php echo article_markdown(); ?></p>
-                    <p><bd><?php echo article_date(); ?></bd></p>
+				<div class="col-lg-10 col-lg-offset-1">
+                    <div class="col-lg-4">
+                    	<h1><a href="<?php echo article_url(); ?>"><?php echo article_title(); ?></a></h1>
+                    	<p><bd><?php echo article_date(); ?>    |    <?php echo dg_est_reading_time(); ?></bd></p>
+                    </div>
+                    <div class="col-lg-8">
+                    	<p><?php echo article_markdown(); ?></p>
+                    </div>
                 </div>
             </div><!-- /row -->
         </div><!-- /container -->
