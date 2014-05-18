@@ -20,8 +20,8 @@
       ui: {
         flyout: "bottom right",
         button_text: "Share",
-        button_background: #16a085,
-        button_color: #555
+        button_background: "#16a085",
+        button_color: "#555",
       },
     });
   </script>
