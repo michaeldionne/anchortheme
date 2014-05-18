@@ -14,7 +14,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="<?php echo theme_url('assets/js/bootstrap.min.js'); ?>"></script>
-=======
 
     <!-- Reftagger -->
     	<script>
