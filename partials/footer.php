@@ -16,7 +16,7 @@
     <script src="<?php echo theme_url('assets/js/bootstrap.min.js'); ?>"></script>
     <script>
         var share_button_right = new Share(".share-button", {
-      title: "Share Button Multiple Instantiation Test",
+      title: $('title').text(),
       ui: {
         flyout: "bottom right",
         button_text: "Share",
