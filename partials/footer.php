@@ -14,6 +14,15 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="<?php echo theme_url('assets/js/bootstrap.min.js'); ?>"></script>
+    <script>
+        var share_button_right = new Share(".share-button-bottom", {
+      title: "Share Button",
+      ui: {
+        flyout: "bottom right",
+        button_text: "Right"
+      },
+    });
+  </script>
 
     <!-- Reftagger -->
     	<script>
