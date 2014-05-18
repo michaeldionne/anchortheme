@@ -19,7 +19,7 @@
       title: "Share Button Multiple Instantiation Test",
       ui: {
         flyout: "bottom right",
-        button_text: "Share"
+        button_text: "Share",
       },
     });
   </script>
