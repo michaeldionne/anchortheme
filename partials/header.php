@@ -9,7 +9,7 @@
     <title><?php echo site_name(); ?></title>
 
     <?php echo site_meta('google_analytics'); ?>
-	
+
      <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="<?php echo theme_url('assets/css/bootstrap.css'); ?>">
     <!-- Custom styles for this template -->
@@ -17,6 +17,8 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="<?php echo theme_url('assets/js/hover.zoom.js'); ?>"></script>
     <script src="<?php echo theme_url('assets/js/hover.zoom.conf.js'); ?>"></script>
+    <script src="<?php echo theme_url('assets/js/app.js'); ?>"></script>
+    <script src="<?php echo theme_url('assets/js/share.min.js'); ?>"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,7 +28,7 @@
 
     <link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
     <link rel="shortcut icon" href="<?php echo theme_url('assets/img/favicon.ico'); ?>">
-  
+
     <?php if(customised()): ?>
     <!-- Custom CSS -->
     <style><?php echo article_css(); ?></style>
