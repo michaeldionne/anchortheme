@@ -18,7 +18,7 @@
 		<div class="row mt">
 			<div class="col-lg-8 col-lg-offset-2">
 				<hr>
-				<p><bt>Category: <a href="<?php echo category_url(); ?>"><?php echo category_title(); ?></a></bt> - <bt>Written: <a><?php echo article_date(); ?></a></bt></p>
+				<p><bt>Category: <a href="<?php echo category_url(); ?>"><?php echo category_title(); ?></a></bt> - <bt>Written: <a><?php echo article_date(); ?></a></bt><?php echo site_meta('share-buttons-mobile'); ?></p>
 					<p><a href="http://michaeldionne.co" onclick="goBack()">Back to Main</a></p>
 			</div>
 		</div><!-- /row -->
