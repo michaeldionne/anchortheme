@@ -1,3 +1,3 @@
 $(document).ready(function(){
-   new Share('.social-share');
+   new Share('.element');
 }); // end doc ready
