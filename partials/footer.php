@@ -19,7 +19,7 @@
       title: "Share Button",
       ui: {
         flyout: "bottom right",
-        button_text: "Right"
+        button_text: "Share",
       },
     });
   </script>
