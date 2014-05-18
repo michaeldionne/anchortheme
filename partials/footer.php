@@ -15,7 +15,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="<?php echo theme_url('assets/js/bootstrap.min.js'); ?>"></script>
     <script>
-        var share_button_right = new Share(".share-button-bottom", {
+        var share_button_right = new Share(".share-button", {
       title: "Share Button Multiple Instantiation Test",
       ui: {
         flyout: "bottom right",
