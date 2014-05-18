@@ -46,7 +46,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <img alt="" height="24px" src="http://michaeldionne.co/themes/Custom/img/logo.png" class="img-responsive navbar-brand"/>
+          <img alt="" src="http://michaeldionne.co/themes/Custom/img/logo.png" class="img-responsive navbar-brand hidden-xs hidden-sm"/>
           <a class="navbar-brand" href="<?php echo base_url(); ?>"><?php echo site_name(); ?></a>
         </div><!-- /navbar-header -->
 
