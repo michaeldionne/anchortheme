@@ -12,5 +12,7 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="<?php echo theme_url('assets/js/bootstrap.min.js'); ?>"></script>
+		<script src="<?php echo theme_url('assets/js/app.js'); ?>"></script>
+		<script src="<?php echo theme_url('assets/js/share.min.js'); ?>"></script>
 </body>
 </html>
