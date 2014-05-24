@@ -7,10 +7,10 @@ $(function(){
   $(window).scroll(function() {
     var scroll = getCurrentScroll();
       if ( scroll >= shrinkHeader ) {
-           $('.header').addClass('shrink');
+           $('.navbar-inverse').addClass('shrink');
         }
         else {
-            $('.header').removeClass('shrink');
+            $('.navbar-inverse').removeClass('shrink');
         }
   });
 function getCurrentScroll() {
